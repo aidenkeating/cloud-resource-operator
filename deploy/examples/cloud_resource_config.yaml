@@ -4,6 +4,6 @@ metadata:
   name: cloud-resource-config
 data:
   managed: |
-    {"blobstorage":"aws", "smtpcredentials":"aws", "redis":"aws", "postgres":"aws"}
+    {"blobstorage":"aws", "smtpcredentials":"aws", "redis":"aws", "postgres":"azure"}
   workshop: |
     {"blobstorage":"openshift", "smtpcredentials":"openshift", "redis":"openshift", "postgres":"openshift"}

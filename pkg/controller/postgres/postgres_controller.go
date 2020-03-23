@@ -3,6 +3,7 @@ package postgres
 import (
 	"context"
 	"fmt"
+	"github.com/integr8ly/cloud-resource-operator/pkg/providers/azure"
 
 	croType "github.com/integr8ly/cloud-resource-operator/pkg/apis/integreatly/v1alpha1/types"
 	"k8s.io/client-go/kubernetes"
@@ -47,7 +48,7 @@ func newReconciler(mgr manager.Manager, cs *kubernetes.Clientset) reconcile.Reco
 	client := mgr.GetClient()
 
 	logger := logrus.WithFields(logrus.Fields{"controller": "controller_postgres"})
-	providerList := []providers.PostgresProvider{openshift.NewOpenShiftPostgresProvider(client, cs, logger), aws.NewAWSPostgresProvider(client, logger)}
+	providerList := []providers.PostgresProvider{openshift.NewOpenShiftPostgresProvider(client, cs, logger), aws.NewAWSPostgresProvider(client, logger), azure.NewDefaultPostgresProvider(logger, client)}
 	rp := resources.NewResourceProvider(client, mgr.GetScheme(), logger)
 	return &ReconcilePostgres{
 		client:           client,
