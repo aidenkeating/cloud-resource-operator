@@ -1,5 +1,9 @@
 # cloud.google.com/go v0.34.0
 cloud.google.com/go/compute/metadata
+# github.com/Azure/azure-sdk-for-go v21.4.0+incompatible
+github.com/Azure/azure-sdk-for-go/profiles/latest/postgresql/mgmt/postgresql
+github.com/Azure/azure-sdk-for-go/services/postgresql/mgmt/2017-12-01/postgresql
+github.com/Azure/azure-sdk-for-go/version
 # github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78
 github.com/Azure/go-ansiterm
 github.com/Azure/go-ansiterm/winterm
@@ -7,7 +11,11 @@ github.com/Azure/go-ansiterm/winterm
 github.com/Azure/go-autorest/autorest
 github.com/Azure/go-autorest/autorest/adal
 github.com/Azure/go-autorest/autorest/azure
+github.com/Azure/go-autorest/autorest/azure/auth
+github.com/Azure/go-autorest/autorest/azure/cli
 github.com/Azure/go-autorest/autorest/date
+github.com/Azure/go-autorest/autorest/to
+github.com/Azure/go-autorest/autorest/validation
 github.com/Azure/go-autorest/logger
 github.com/Azure/go-autorest/version
 # github.com/BurntSushi/toml v0.3.1
@@ -93,6 +101,8 @@ github.com/cyphar/filepath-securejoin
 github.com/davecgh/go-spew/spew
 # github.com/dgrijalva/jwt-go v3.2.0+incompatible
 github.com/dgrijalva/jwt-go
+# github.com/dimchansky/utfbom v1.1.0
+github.com/dimchansky/utfbom
 # github.com/docker/distribution v2.7.1+incompatible
 github.com/docker/distribution/digestset
 github.com/docker/distribution/reference
@@ -421,6 +431,8 @@ golang.org/x/crypto/openpgp/errors
 golang.org/x/crypto/openpgp/packet
 golang.org/x/crypto/openpgp/s2k
 golang.org/x/crypto/pbkdf2
+golang.org/x/crypto/pkcs12
+golang.org/x/crypto/pkcs12/internal/rc2
 golang.org/x/crypto/scrypt
 golang.org/x/crypto/ssh/terminal
 # golang.org/x/net v0.0.0-20191003171128-d98b1b443823

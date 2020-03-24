@@ -3,8 +3,11 @@ module github.com/integr8ly/cloud-resource-operator
 go 1.13
 
 require (
+	github.com/Azure/azure-sdk-for-go v21.4.0+incompatible
+	github.com/Azure/go-autorest v11.1.2+incompatible
 	github.com/aws/aws-sdk-go v1.23.17
 	github.com/coreos/prometheus-operator v0.35.0
+	github.com/dimchansky/utfbom v1.1.0 // indirect
 	github.com/go-openapi/spec v0.19.0
 	github.com/gogo/protobuf v1.3.0 // indirect
 	github.com/golang/groupcache v0.0.0-20190702054246-869f871628b6 // indirect

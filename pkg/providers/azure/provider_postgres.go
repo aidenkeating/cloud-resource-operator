@@ -3,6 +3,7 @@ package azure
 import (
 	"context"
 	"os"
+	"sigs.k8s.io/controller-runtime/pkg/client"
 	"time"
 
 	"github.com/Azure/azure-sdk-for-go/profiles/latest/postgresql/mgmt/postgresql"
@@ -11,7 +12,6 @@ import (
 	"github.com/integr8ly/cloud-resource-operator/pkg/apis/integreatly/v1alpha1/types"
 	"github.com/integr8ly/cloud-resource-operator/pkg/providers"
 	"github.com/integr8ly/cloud-resource-operator/pkg/resources"
-	"github.com/moby/moby/client"
 
 	"github.com/sirupsen/logrus"
 	v1 "k8s.io/api/core/v1"
